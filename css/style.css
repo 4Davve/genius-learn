@@ -32,6 +32,7 @@ ul {
 /* Links */
 .nav-links {
   color: var(--color-primay-light);
+  text-decoration: none;
 }
 
 .nav-links:hover {
@@ -39,8 +40,18 @@ ul {
 }
 
 /* Hero section */
+.hero-title {
+  color: var(--color-primay-light);
+  text-align: center;
+  /* text-shadow: 2px 2px 4px #000; */
+  /* letter-spacing: 4px; */
+  /* word-spacing: 15px; */
+  /* white-space: nowrap; */
+}
+
 .hero-title .accent {
   color: var(--color-brand-light);
+  font-family: "Poppins", sans-serif;
 }
 
 /* Advantages section */
@@ -51,4 +62,14 @@ ul {
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/* Traditions section */
+.traditions-text .brand {
+  color: var(--color-brand-light);
+
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
 }
