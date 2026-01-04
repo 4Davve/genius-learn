@@ -34,6 +34,10 @@
 
 /* Base */
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color-primay-dark: #31261A;
   --color-primay-light: #FAF4EA;
@@ -48,6 +52,17 @@ body {
   font-size: 18px;
   line-height: 1.5;
   /* Кофициєнт 27 / 18 = 1.5 */
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
@@ -58,6 +73,17 @@ ul {
   list-style-type: none;
 }
 
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .btn-primary {
   color: var(--color-primay-light);
@@ -66,6 +92,7 @@ ul {
   background-color: var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .btn-primary:hover {
@@ -85,6 +112,10 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primay-light);
   text-align: center;
@@ -96,11 +127,21 @@ ul {
   /* text-shadow: 2px 2px 4px #000; */
   /* letter-spacing: 4px; */
   /* word-spacing: 15px; */
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
   color: var(--color-brand-light);
   font-family: "Poppins", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Advantages section */
@@ -125,6 +166,14 @@ ul {
 }
 
 /* Traditions section */
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -135,13 +184,20 @@ ul {
 }
 
 /* Chef section */
+.chefs-title {
+  margin-bottom: 80px;
+}
 
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* Format section */
+.formats-title {
+  margin-bottom: 80px;
+}
 
 .format-title {
   font-size: 24px;
@@ -151,6 +207,11 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* Contact section */
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* Footer */
