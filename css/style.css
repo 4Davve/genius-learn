@@ -143,6 +143,12 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
+  /* background: url(../img/coupe-in-bekery.jpg) no-repeat center top / cover fixed; */
+  background-image: url(../img/coupe-in-bekery.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-title {

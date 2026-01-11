@@ -8,5 +8,12 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "gitlens.currentLine.enabled": true,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.codeLens.enabled": true,
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.inlineBlame.enabled": false,
+  "gitlens.views.enabled": true,
+  "gitlens.explorer.enabled": true
 }
