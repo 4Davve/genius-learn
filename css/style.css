@@ -34,7 +34,9 @@
 
 /* Base */
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -66,6 +68,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 address {
@@ -251,9 +257,18 @@ ul {
 }
 
 /* Chef section */
+
 .chefs-title {
   max-width: 540px;
   margin: 0 auto 80px;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
 }
 
 .chefs-title::before,
@@ -264,6 +279,16 @@ ul {
   border: 2px solid #cfcfbc;
   /* height: 2px;
   background-color: #cfcfbc; */
+}
+
+.chefs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .chef-images {
@@ -278,7 +303,26 @@ ul {
   margin-bottom: 16px;
 }
 
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-main {
+  max-width: 334px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 /* Format section */
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .formats-list {
   display: flex;
   gap: 20px;
@@ -288,6 +332,7 @@ ul {
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
 }
+
 
 .format-card {
   height: 444px;
@@ -314,9 +359,10 @@ ul {
 /* Corusel buttons */
 
 .carusel-button {
-  display: flex; /* */
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -339,11 +385,56 @@ ul {
 }
 
 /* Contact section */
+
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
 .contact-title {
   margin-bottom: 16px;
 }
 
+.contact-map {
+  border: none;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
 /* Footer */
+
+.footer {
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list {
+  flex-grow: 1;
+}
+
+/* .address-info {
+  display: flex;
+} */
 
 .address-link {
   color: var(--color-primay-light);
