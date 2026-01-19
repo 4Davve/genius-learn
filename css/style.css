@@ -259,7 +259,7 @@ ul {
 /* Chef section */
 
 .chefs-title {
-  max-width: 540px;
+  position: relative;
   margin: 0 auto 80px;
 }
 
@@ -273,12 +273,19 @@ ul {
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
+  position: absolute;
+  bottom: 24px;
   content: '';
   width: 352px;
   border: 2px solid #cfcfbc;
-  /* height: 2px;
-  background-color: #cfcfbc; */
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
@@ -408,7 +415,34 @@ ul {
 /* Footer */
 
 .footer {
+  position: relative;
+  background-color: var(--color-primay-dark);
+  background-image: url(../img/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 32px 0;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../img/decor-brand-small.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../img/decor-brand-large.png);
 }
 
 .footer-container {
@@ -459,10 +493,36 @@ ul {
   fill: var(--color-brand-normal);
 }
 
-.footer {
-  background-color: var(--color-primay-dark);
-  background-image: url(../img/footer-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primay-light);
+  border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
