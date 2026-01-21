@@ -98,7 +98,11 @@ ul {
 /* Header */
 
 .header {
-  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -143,6 +147,7 @@ ul {
 .nav-links {
   color: var(--color-primay-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav-links:hover {
@@ -153,7 +158,12 @@ ul {
 .hero-section {
   padding: 272px 0;
   /* background: url(../img/coupe-in-bekery.jpg) no-repeat center top / cover fixed; */
-  background-image: url(../img/hero-section-background.jpg);
+  background-image: linear-gradient(102.76deg,
+  rgba(18, 18, 17, 0.78) 2.03%,
+  rgba(18, 18, 17, 0.6) 58.46%,
+  rgba(18, 18, 17, 0) 90.36%
+  ),
+  url(../img/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -347,6 +357,11 @@ ul {
   border: 1px solid lightgray;
   border-radius: 16px;
   padding: 24px;
+  transition: transform 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 .formats-title {
@@ -381,6 +396,10 @@ ul {
 
 .carusel-button:hover {
   background-color: var(--color-primay-dark);
+}
+
+.carusel-button.next {
+  transform: rotate(180deg);
 }
 
 .carusel-button:hover .carusel-arrow {
@@ -505,12 +524,16 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
   position: relative;
   width: 880px;
+  min-width: 880px;
   height: 880px;
+  max-height: 880px;
   background-color: var(--color-primay-light);
   border-radius: 32px;
 }
