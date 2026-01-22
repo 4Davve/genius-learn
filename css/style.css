@@ -529,9 +529,9 @@ ul {
 
 .modal {
   position: relative;
-  width: 880px;
+  width: 100%;
   min-width: 880px;
-  height: 880px;
+  height: 100%;
   max-height: 880px;
   background-color: var(--color-primay-light);
   border-radius: 32px;
