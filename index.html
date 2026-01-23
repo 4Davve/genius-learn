@@ -258,34 +258,50 @@
     </div>
   </footer>
 
-  <div class="backdrop is-hidden">
+  <div class="backdrop">
     <div class="modal">
       <button class="modal-btn-close" type="button">Close</button>
       <h2>Замовити дзвінок</h2>
       <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-      <form name="modal-form" autocomplete="on" novalidate>
+      <form name="modal-form" autocomplete="off">
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-name">
             Ім'я
 
           </label>
-          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я">
+          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
         </div>
 
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-          <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон">
+          <input class="form-input" type="tel" id="user-tel" pattern="^\+380\d{9}$" title="Введіть номер телефону (10–15 цифр)" name="user-tel" placeholder="Телефон"
+          required>
         </div>
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-email">
             Електронна пошта
           </label>
-          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта">
+          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
+          required>
         </div>
 
-        <button class="btn-primary form-button" type="submit">Замовити дзвінок
+        <!-- <div class="checkbox">
+          <input
+          class="checkbox-input"
+          type="checkbox"
+          id="terms-conditions"
+          name="terms-conditions"
+          required>
+          <label 
+          class="checkbox-label"
+          for="terms-conditions">
+        Я погоджуюсь з політикою конфіденційності</label>
+        </div> -->
+
+        <button class="btn-primary form-button" type="submit">
+          Замовити дзвінок
         </button>
 
         <p class="form-terms">
