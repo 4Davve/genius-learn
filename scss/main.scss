@@ -1,88 +1,15 @@
-/* Fonts */
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-weight: 300;
-  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2'),
-    url('../fonts/poppins-v24-latin-300.ttf') format('truetype');
-}
+@import './base';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-weight: 400;
-  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'),
-    url('../fonts/poppins-v24-latin-regular.ttf') format('truetype');
-}
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-weight: 600;
-  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'),
-    url('../fonts/poppins-v24-latin-600.ttf') format('truetype');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-weight: 900;
-  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2'),
-    url('../fonts/poppins-v24-latin-900.ttf') format('truetype');
-}
-
-/* Base */
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --color-primay-dark: #31261A;
-  --color-primay-light: #FAF4EA;
-  --color-brand-light: #cfcfbc;
-  --color-brand-dark: #465929;
-  --color-brand-normal: #819B57;
-  --color-secondary-dark: #a28268;
-}
-
-body {
-  color: var(--color-primay-dark);
-  background-color: var(--color-primay-light);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  /* Кофициєнт 27 / 18 = 1.5 */
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
-
-a {
-  display: inline-block;
-}
-
-address {
-  font-style: normal;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+@import './utils/mixin';
 
 .section {
   padding: 48px 0;
@@ -95,115 +22,7 @@ ul {
   padding: 0 24px;
 }
 
-/* Header */
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 32px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 64px;
-}
-
-.header-item {}
-
-/* Button */
-.btn-primary {
-  color: var(--color-primay-light);
-  font-weight: 600;
-  border: 2px solid var(--color-brand-normal);
-  background-color: var(--color-brand-normal);
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 16px 32px;
-}
-
-.btn-primary:hover {
-  color: var(--color-brand-dark);
-  background-color: transparent;
-}
-
-/* .form-button:disabled {
-  color: gray;
-  background-color: lightgray;
-  border-color: currentColor;
-  cursor: not-allowed;
-} */
-
-
-/* Links */
-.nav-links {
-  color: var(--color-primay-light);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links:hover {
-  color: var(--color-brand-normal);
-}
-
 /* Hero section */
-.hero-section {
-  padding: 272px 0;
-  /* background: url(../img/coupe-in-bekery.jpg) no-repeat center top / cover fixed; */
-  background-image: linear-gradient(102.76deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%),
-    url(../img/hero-section-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  /* background-attachment: fixed; */
-}
-
-.hero-title {
-  color: var(--color-primay-light);
-  text-align: center;
-  font-weight: 900;
-  font-size: 128px;
-  /* font-style: italic; */
-  /* text-decoration: none; */
-  /* white-space: nowrap; */
-  /* text-shadow: 2px 2px 4px #000; */
-  /* letter-spacing: 4px; */
-  /* word-spacing: 15px; */
-  margin-bottom: 0;
-}
-
-.hero-title .accent {
-  color: var(--color-brand-normal);
-  font-family: "Poppins", sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 
 /* Advantages section */
 .advantages-section {
@@ -317,7 +136,8 @@ ul {
 
 .chef-images {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primay-light),
+  box-shadow:
+    -16px 16px 0 0 var(--color-primay-light),
     -16px 16px 0 2px var(--color-secondary-dark);
 }
 
@@ -357,18 +177,36 @@ ul {
   flex-basis: calc((100% - 40px) / 3);
 }
 
-
 .format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--color-primay-light);
   height: 444px;
-  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0%) 55%, rgba(49, 38, 26, 71%) 73%, #31261A 100%);
-  border: 1px solid lightgray;
   border-radius: 16px;
-  padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0%) 55%,
+    rgba(49, 38, 26, 71%) 73%,
+    #31261a 100%
+    );
   transition: transform 0.3s;
+  padding: 24px;
+  overflow: hidden;
 }
 
 .format-card:hover {
   transform: scale(1.05);
+}
+
+.format-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .formats-title {
@@ -396,7 +234,7 @@ ul {
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid #31261A;
+  border: 1px solid #31261a;
   cursor: pointer;
   padding: 0;
 }
@@ -532,7 +370,9 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 
 .modal {

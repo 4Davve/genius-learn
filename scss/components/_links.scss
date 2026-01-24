@@ -1,0 +1,9 @@
+.nav-links {
+  color: var(--color-primay-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links:hover {
+  color: var(--color-brand-normal);
+}

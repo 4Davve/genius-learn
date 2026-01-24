@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сучасна пекарня</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -124,6 +124,7 @@
           <ul class="formats-list">
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./img/walrus-format.jpg" alt="Walrus">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -135,6 +136,7 @@
             </li>
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./img/horseshoe-format.jpg" alt="Horseshoe">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -146,6 +148,7 @@
             </li>
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./img/format-handlebar.jpg" alt="Handlebar">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -258,7 +261,7 @@
     </div>
   </footer>
 
-  <div class="backdrop">
+  <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close" type="button">Close</button>
       <h2>Замовити дзвінок</h2>
@@ -275,8 +278,8 @@
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-          <input class="form-input" type="tel" id="user-tel" pattern="^\+380\d{9}$" title="Введіть номер телефону (10–15 цифр)" name="user-tel" placeholder="Телефон"
-          required>
+          <input class="form-input" type="tel" id="user-tel" pattern="^\+380\d{9}$"
+            title="Введіть номер телефону (10–15 цифр)" name="user-tel" placeholder="Телефон" required>
         </div>
 
         <div class="form-field">
@@ -284,7 +287,7 @@
             Електронна пошта
           </label>
           <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
-          required>
+            required>
         </div>
 
         <!-- <div class="checkbox">

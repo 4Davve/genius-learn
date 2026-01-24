@@ -1,0 +1,9 @@
+@mixin circle($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+
+// .circle {
+//   @include circle(100px, 100px, #fff)
+// }
