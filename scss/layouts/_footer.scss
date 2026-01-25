@@ -1,0 +1,78 @@
+.footer {
+  position: relative;
+  background-color: var(--color-primay-dark);
+  background-image: url(../img/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../img/decor-brand-small.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../img/decor-brand-large.png);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list {
+  flex-grow: 1;
+}
+
+/* .address-info {
+  display: flex;
+} */
+
+.address-link {
+  color: var(--color-primay-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+
+.address-copyright {
+  font-size: 14px;
+}
+
+.address-icon {
+  fill: var(--color-primay-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
