@@ -11,16 +11,16 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-container">
-        <nav class="header-nav">
+      <div class="header__container">
+        <nav class="header__nav">
           <a href="/">
             <img src="./img/logo.svg" alt="Магазин Випічки">
           </a>
-          <ul class="header-menu">
-            <li class="header-item"><a href="#traditions-section" class="nav-links">Наші традиції</a></li>
-            <li class="header-item"><a href="#chefs-section" class="nav-links">Шеф-кухарі</a></li>
-            <li class="header-item"><a href="#formats-section" class="nav-links">Формати</a></li>
-            <li class="header-item"><a href="#contacts-section" class="nav-links">Контакти</a></li>
+          <ul class="header__menu">
+            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+            <li><a class="link" href="#formats-section">Формати</a></li>
+            <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
         <button class="btn-primary modal-btn-open" type="button">Замовити дзвінок</button>
@@ -31,79 +31,93 @@
   <main>
     <section class="hero-section">
       <div class="container">
-        <h1 class="hero-title">
-          <span class="accent">Сучасна</span> пекарня
+        <h1 class="hero-section__title">
+          <span class="text-brand">Сучасна</span> пекарня
         </h1>
       </div>
     </section>
     <section class="advantages-section">
       <div class="container">
         <h2 class="visually-hidden">Нащі переваги</h2>
-        <ul class="advantages-ul">
-          <li class="advantages-item">Великий попит на ринку</li>
-          <li class="advantages-item">Доступні за бюджетом формати</li>
-          <li class="advantages-item">Досвідчена управлінська команда</li>
+        <ul class="advantages-section__list">
+          <li class="advantages-section__item">Великий попит на ринку</li>
+          <li class="advantages-section__item">Доступні за бюджетом формати</li>
+          <li class="advantages-section__item">Досвідчена управлінська команда</li>
         </ul>
       </div>
     </section>
     <section class="traditions-section section" id="traditions-section">
       <div class="container">
-        <div class="traditions-container">
-          <div class="traditions-content">
-            <h2 class="traditions-title section-title">Новий формат традицій</h2>
-            <p class="traditions-text">
-              <span class="brand uppercase" lang="en">shop bakery</span> — це пекарня, яка взяла все найкраще, і
+        <div class="traditions-section__container">
+          <div class="traditions-section__content">
+            <h2 class="traditions-section__title section__title">Новий формат традицій</h2>
+            <p>
+              <span class="text-brand text-bold text-uppercase" lang="en">shop bakery</span> — це пекарня, яка взяла все найкраще, і
               зберегла
               смак
               традиційної випічки та
               натуральність інгредієнтів.
             </p>
-            <p class="traditions-text limited">
+            <p class="traditions-section__text traditions-section__text--limited">
               Ми працюємо як найвідоміші мережі —
-              <span class="brand">5 хвилин і замовлення готове</span>.
+              <span class="text-brand text-bold ">5 хвилин і замовлення готове</span>.
               А ще у наших пекарень стильний дизайн
               та висока якість обслуговування!
             </p>
           </div>
-          <img class="traditions-image" src="./img/baker-man.jpg" alt="Чоловік випикає хліб з посмішкою">
+          <img class="traditions-section__image" src="./img/baker-man.jpg" alt="Чоловік випикає хліб з посмішкою">
         </div>
       </div>
     </section>
-    <section class="section" id="chefs-section">
+    <section class="chefs-section section" id="chefs-section">
       <div class="container">
-        <h2 class="chefs-title section-title centered">Наші найкращі <br>
-          <span class="accent">шеф-кухарі</span>
+        <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі <br>
+          <span class="text-brand-dark">шеф-кухарі</span>
         </h2>
-        <ul class="chefs-list">
-          <li class="chefs-item">
+        <ul class="chefs-section__list">
+          <li class="chef-section__item">
             <article class="chef-card">
-              <img class="chef-images" src="./img/chef-nastya.jpg" alt="Nastya chef">
-              <div class="chef-main">
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <div class="chef-text">
-                  <p>Вже 10 років, я втілюю
+              <img class="chef-card__photo" src="./img/chef-nastya.jpg" alt="Nastya chef">
+              <div>
+                <h3 class="chef-card__title">
+                  Настя
+                </h3>
+                <p class="chef-card__text">
+                  Привіт, я Настя!
+                </p>
+                <div class="chef-card__text">
+                  <p class="chef-card__text">
+                    Вже 10 років, я втілюю
                     <br>у життя цікаві та смачні ідеї.
                   </p>
-                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                  <p class="chef-card__text">
+                    Я випічу для вас найсмачніщі вироби!
+                  </p>
                 </div>
               </div>
             </article>
           </li>
-          <li class="chefs-item">
+          <li class="chef-section__item">
             <article class="chef-card">
-              <img class="chef-images" src="./img/chef-vlad.jpg" alt="Vlad chef">
-              <div class="chef-main">
-                <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <div class="chef-text">
-                  <p>Мій кодитерський стаж вже 18 років.
+              <img class="chef-card__photo" src="./img/chef-vlad.jpg" alt="Vlad chef">
+              <div>
+                <h3 class="chef-card__title">
+                  Влад
+                </h3>
+                <p class="chef-card__text">
+                  Привіт, я Влад!
+                </p>
+                <div class="chef-card__text">
+                  <p class="chef-card__text">
+                    Мій кодитерський стаж вже 18 років.
                     <br><span class="text-uppercase">shop bekery</span> - це наша любов, з
                     <br>якою ми ділимось кожен
                     раз
                     з Вами через нашу випічку!
                   </p>
-                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                  <p class="chef-card__text">
+                    Я зроблю для вас унікальну начинку на будь який смак!
+                  </p>
                 </div>
               </div>
             </article>
@@ -111,7 +125,7 @@
         </ul>
       </div>
     </section>
-    <section class="section" id="formats-section">
+    <section class="formats-section section" id="formats-section">
       <div class="container">
         <h2 class="formats-title section-title centered">Формати</h2>
         <div class="formats-container">
@@ -224,10 +238,10 @@
             </a>
           </div>
           <ul class="footer-menu">
-            <li><a class="nav-links" href="#traditions-section">Наші традиції</a></li>
-            <li><a class="nav-links" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="nav-links" href="#formats-section">Формати</a></li>
-            <li><a class="nav-links" href="#contacts-section">Контакти</a></li>
+            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+            <li><a class="link" href="#formats-section">Формати</a></li>
+            <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
         <address class="footer-address">

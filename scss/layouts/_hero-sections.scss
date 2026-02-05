@@ -13,23 +13,18 @@
   background-position: center top;
   background-size: cover;
   /* background-attachment: fixed; */
-}
 
-.hero-title {
-  color: var(--color-primay-light);
-  text-align: center;
-  font-weight: 900;
-  font-size: 128px;
-  /* font-style: italic; */
-  /* text-decoration: none; */
-  /* white-space: nowrap; */
-  /* text-shadow: 2px 2px 4px #000; */
-  /* letter-spacing: 4px; */
-  /* word-spacing: 15px; */
-  margin-bottom: 0;
-}
-
-.hero-title .accent {
-  color: var(--color-brand-normal);
-  font-family: "Poppins", sans-serif;
+  &__title {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-weight: 900;
+    font-size: 128px;
+    /* font-style: italic; */
+    /* text-decoration: none; */
+    /* white-space: nowrap; */
+    /* text-shadow: 2px 2px 4px #000; */
+    /* letter-spacing: 4px; */
+    /* word-spacing: 15px; */
+    margin-bottom: 0;
+  }
 }
