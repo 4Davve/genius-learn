@@ -12,8 +12,8 @@
 @use './layouts/contact-sections';
 @use './layouts/container';
 @use './layouts/footer';
+@use './layouts/form-terms';
 @use './layouts/formats-sections';
-@use './layouts/forms';
 @use './layouts/header';
 @use './layouts/hero-sections';
 @use './layouts/modal';
@@ -24,4 +24,5 @@
 @use './components/carousel-button';
 @use './components/chef-card';
 @use './components/format-card';
+@use './components/input';
 @use './components/links';

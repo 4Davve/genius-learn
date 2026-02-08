@@ -23,7 +23,7 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 40px 30px;
   }
 
@@ -31,9 +31,3 @@
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-
-.chef-main {
-  max-width: 334px;
-}
-
-
