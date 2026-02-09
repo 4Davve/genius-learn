@@ -1,9 +1,15 @@
+@use '../utils/breakpoints' as bp;
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
+  @media screen and (min-width: bp.$desktop) {
+      padding-top: 32px;
+    }
 
   &__container {
     display: flex;
@@ -19,9 +25,34 @@
   }
 
   &__menu {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 64px;
+    display: none;
+
+    @media screen and (min-width: bp.$desktop) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 64px;
+    }
+  }
+
+&__button.button {
+    display: none;
+
+    @media screen and (min-width: bp.$desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: bp.$desktop) {
+      display: none;
+    }
   }
 }

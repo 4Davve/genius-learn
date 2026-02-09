@@ -1,3 +1,4 @@
+@use './utils/breakpoints' as bp;
 @use './utils/fonts';
 @use './utils/mixin';
 @use './utils/texts';
@@ -16,6 +17,7 @@
 @use './layouts/formats-sections';
 @use './layouts/header';
 @use './layouts/hero-sections';
+@use './layouts/mobile-menu';
 @use './layouts/modal';
 @use './layouts/section';
 @use './layouts/traditions-sections';

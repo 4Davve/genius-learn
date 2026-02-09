@@ -1,9 +1,16 @@
+@use '../utils/breakpoints' as bp;
+
 .traditions-section {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: bp.$tablet) {
+    padding-top: 96px;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 40px;
   }
 
@@ -22,6 +29,11 @@
   }
 
   &__image {
+    display: none;
     border-radius: 400px 400px 0 0;
+
+    @media screen and (min-width: bp.$tablet) {
+      display: block;
+    }
   }
 }
