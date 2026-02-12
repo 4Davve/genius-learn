@@ -7,23 +7,16 @@
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid #31261a;
+  border: 1px solid var(--color-primary-dark);
   cursor: pointer;
   padding: 0;
-}
 
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-}
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
 
-.carousel-button.next {
-  transform: rotate(180deg);
-}
-
-.carousel-button:hover .carousel-arrow {
-  fill: var(--color-brand-light);
-}
-
-.carousel-arrow {
-  fill: var(--color-primary-dark);
+  &.next {
+    transform: rotate(180deg);
+  }
 }

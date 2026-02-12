@@ -173,7 +173,7 @@
           </h2>
           <div class="formats-section__slider">
             <button
-              class="carousel-button prev"
+              class="formats-section__button carousel-button prev"
               type="button"
               title="swipe slider"
             >
@@ -301,7 +301,7 @@
               </div>
             </div>
             <button
-              class="carousel-button next"
+              class="formats-section__button carousel-button next"
               type="button"
               title="swipe slider"
             >
@@ -316,100 +316,144 @@
         </div>
       </section>
 
-      <!-- <section class="contacts-section section" id="contacts-section">
-      <div class="container">
-        <div class="contacts-section__container">
-          <div class="contacts-section__form">
-            <h2 class="contacts-section__title section__title">Приєднуйся до мережі пекарень</h2>
-            <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <form name="contact-form" autocomplete="off" novalidate>
-              <div class="contacts-section__form-field input">
-                <label class="form-label visually-hidden" for="user-name">
-                  Ім'я
+      <section class="contacts-section section" id="contacts-section">
+        <div class="container">
+          <div class="contacts-section__container">
+            <div class="contacts-section__form">
+              <h2 class="contacts-section__title section__title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="contacts-section__form-field input">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Ім'я
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
 
-                </label>
-                <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Ім'я">
-              </div>
+                <div class="contacts-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="input__control"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
 
+                <div class="contacts-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Електронна пошта
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
 
-              <div class="contacts-section__form-field input">
-                <label class="input__label visually-hidden" for="user-tel">Телефон</label>
-                <input class="input__control" type="tel" id="user-tel" name="user-tel" placeholder="Телефон">
-              </div>
+                <button class="contacts-section__button button" type="submit">
+                  Замовити дзвінок
+                </button>
 
-              <div class="contacts-section__form-field input">
-                <label class="input__label visually-hidden" for="user-email">
-                  Електронна пошта
-                </label>
-                <input class="input__control" type="email" id="user-email" name="user-email"
-                  placeholder="Електронна пошта">
-              </div>
-
-              <button class="contacts-section__button button" type="submit">
-                Замовити дзвінок
-              </button>
-
-              <p class="form-terms">
-                Натискаючи на кнопку я погоджуюсь з
-                <a class="form-terms__link" href="#">політикою конфіденційності</a>
-              </p>
-            </form>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms__link" href="#"
+                    >політикою конфіденційності</a
+                  >
+                </p>
+              </form>
+            </div>
+            <iframe
+              class="contacts-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1412831001103!2d30.491044605469813!3d50.45709373012264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1766670151527!5m2!1sru!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <iframe class="contacts-section__map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1412831001103!2d30.491044605469813!3d50.45709373012264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1766670151527!5m2!1sru!2sua"
-            width="603" height="595" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
-    </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
-    <div class="container">
-      <div class="footer-container">
-        <nav class="footer-nav">
-          <div class="footer-logo">
-            <a href="/">
-              <img src="./img/logo.svg" alt="Магазин Випічки">
-            </a>
-          </div>
-          <ul class="footer-menu">
-            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <address class="footer-address">
-          <ul class="address-list">
-            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-            <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-            <li><a class="address-link" href="maps.app.goo.gl/u5U3vMJgjTnfdptp7" target="_blank">Україна, м. Київ, вул.
-                Січових Стрільців 54</a></li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./img/pritter.svg#icon-facebook">
-                  </use>
-                </svg>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="./img/logo.svg" alt="Магазин Випічки" />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./img/pritter.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="address-info">
-            <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
-            <p class="address-copyright">&copy; 2022 Дані захищені</p>
-          </div>
-        </address>
+            </div>
+            <ul class="footer__menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer__address">
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="mailto:shopbakery@gmail.com"
+                    >shopbakery@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__address-link"
+                    href="maps.app.goo.gl/u5U3vMJgjTnfdptp7"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Січових Стрільців 54</a
+                  >
+                </li>
+              </ul>
+              <div class="">
+                <a href="#">
+                  <svg class="footer__address-icon" width="32" height="32">
+                    <use href="./img/pritter.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+  
+                <a href="#">
+                  <svg class="footer__address-icon" width="32" height="32">
+                    <use href="./img/pritter.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__address-info">
+              <a class="footer__address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
-    </div>
-  </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden">
       <div class="modal">
