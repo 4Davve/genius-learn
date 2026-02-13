@@ -471,7 +471,7 @@
                   >
                 </li>
               </ul>
-              <div class="">
+              <div class="footer__address-social">
                 <a href="#">
                   <svg class="footer__address-icon" width="32" height="32">
                     <use href="./img/pritter.svg#icon-facebook"></use>
@@ -499,10 +499,18 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          ‌<svg
+            class="icon-menu-to-close-transition modal__btn-close-icon"
+            width="32"
+            height="32"
+          >
+            <use href="img/pritter.svg#icon-menu-to-close-transition"></use>
+          </svg>
         </button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
         <form name="modal-form" autocomplete="off">
           <div class="modal__form-field input">
             <label class="input__label visually-hidden" for="user-name">
