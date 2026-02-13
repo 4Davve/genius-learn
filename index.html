@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="/">
+            <a class="header__logo" href="/">
               <img src="./img/logo.svg" alt="Магазин Випічки" />
             </a>
             <ul class="header__menu">
@@ -42,8 +42,39 @@
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              ‌<svg
+                class="icon-menu-to-close-transition"
+                width="32"
+                height="32"
+              >
+                <use href="img/pritter.svg#icon-menu-to-close-transition"></use>
+              </svg>
             </button>
+            <a class="mobile-menu__logo" href="/">
+              <svg class="icon-logo-black" width="72px" height="38px">
+                <use href="img/pritter.svg#icon-logo-black"></use>
+              </svg>
+            </a>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#tradition-section"
+                  >Наші традиції</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#chefs-section"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#format-section">Формати</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#contacts-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -56,7 +87,7 @@
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
           <button
-            class="hero-section__button button modal-btn-open"
+            class="hero-section__button button modal-btn-mobile-open"
             type="button"
           >
             Замовити дзвінок
@@ -94,7 +125,7 @@
               <p
                 class="traditions-section__text traditions-section__text--limited"
               >
-                Ми працюємо як найвідоміші мережі —
+                Ми працюємо як найвідоміші мережі — <br />
                 <span class="text-brand text-bold"
                   >5 хвилин і замовлення готове</span
                 >. А ще у наших пекарень стильний дизайн та висока якість
@@ -214,12 +245,13 @@
                     />
                     <h3 class="format-card__title" lang="en">Horseshoe</h3>
                     <div class="format-card__text">
-                      <p>Площа: до 25 м2</p>
-                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
                       <p>
-                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекарня
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
                       </p>
-                      <p>Посадкові місця: відсутні</p>
+                      <p>Посадкові місця: є</p>
                     </div>
                   </article>
                 </li>
@@ -232,10 +264,13 @@
                     />
                     <h3 class="format-card__title" lang="en">Handlebar</h3>
                     <div class="format-card__text">
-                      <p>Площа: до 15 м2</p>
-                      <p>Меню: найпопулярніші позиції меню</p>
-                      <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                      <p>Посадкові місця: відсутні</p>
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
                     </div>
                   </article>
                 </li>
@@ -267,12 +302,13 @@
                     />
                     <h3 class="format-card__title" lang="en">Horseshoe</h3>
                     <div class="format-card__text">
-                      <p>Площа: до 25 м2</p>
-                      <p>Меню: найпопулярніші позиції меню</p>
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
                       <p>
-                        Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекарня
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
                       </p>
-                      <p>Посадкові місця: відсутні</p>
+                      <p>Посадкові місця: є</p>
                     </div>
                   </article>
                 </li>
@@ -285,10 +321,13 @@
                     />
                     <h3 class="format-card__title" lang="en">Handlebar</h3>
                     <div class="format-card__text">
-                      <p>Площа: до 15 м2</p>
-                      <p>Меню: найпопулярніші позиції меню</p>
-                      <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                      <p>Посадкові місця: відсутні</p>
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
                     </div>
                   </article>
                 </li>
@@ -323,7 +362,9 @@
               <h2 class="contacts-section__title section__title">
                 Приєднуйся до мережі пекарень
               </h2>
-              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p class="section__paragraph">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
               <form name="contact-form" autocomplete="off" novalidate>
                 <div class="contacts-section__form-field input">
                   <label class="form-label visually-hidden" for="user-name">
@@ -436,7 +477,7 @@
                     <use href="./img/pritter.svg#icon-facebook"></use>
                   </svg>
                 </a>
-  
+
                 <a href="#">
                   <svg class="footer__address-icon" width="32" height="32">
                     <use href="./img/pritter.svg#icon-instagram"></use>

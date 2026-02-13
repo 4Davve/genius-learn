@@ -21,4 +21,12 @@
       text-align: center;
     }
   }
+
+  &__paragraph {
+    font-size: 14px;
+
+        @media screen and (min-width: bp.$tablet) {
+      font-size: 18px;
+    }
+  }
 }

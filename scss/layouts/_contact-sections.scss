@@ -1,12 +1,18 @@
 @use '../utils/breakpoints' as bp;
 
-.contacts-section {
-  padding-bottom: 96px;
+.section.contacts-section {
+  padding: 20px 0 0;
 
+  @media screen and (min-width: bp.$tablet) {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+
+.contacts-section {
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 
     @media screen and (min-width: bp.$tablet) {
       flex-direction: row;
@@ -15,7 +21,12 @@
   }
 
   &__title {
+    text-align: center;
     margin-bottom: 16px;
+
+    @media screen and (min-width: bp.$tablet) {
+      text-align: start;
+    }
   }
 
   &__form-field {
@@ -31,16 +42,16 @@
     border: none;
     height: 176px;
     margin: 0 -24px;
-    border-radius: 16px;
     flex-shrink: 0;
 
     @media screen and (min-width: bp.$tablet) {
       margin: auto;
       width: 320px;
       height: 500px;
+      border-radius: 16px;
     }
 
-        @media screen and (min-width: bp.$desktop) {
+    @media screen and (min-width: bp.$desktop) {
       width: 600px;
       height: 595px;
     }

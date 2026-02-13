@@ -160,6 +160,12 @@ ul {
 @media screen and (min-width: 768px) {
   .advantages-section__item {
     color: var(--color-primary-light);
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages-section__item {
+    color: var(--color-primary-light);
     font-size: 20px;
   }
 }
@@ -202,7 +208,7 @@ ul {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .chefs-section__list {
@@ -220,9 +226,16 @@ ul {
   }
 }
 
-.contacts-section {
-  padding-bottom: 96px;
+.section.contacts-section {
+  padding: 20px 0 0;
 }
+@media screen and (min-width: 768px) {
+  .section.contacts-section {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+
 .contacts-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +244,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 24px;
 }
 @media screen and (min-width: 768px) {
   .contacts-section__container {
@@ -243,7 +255,13 @@ ul {
   }
 }
 .contacts-section__title {
+  text-align: center;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-section__title {
+    text-align: start;
+  }
 }
 .contacts-section__form-field {
   margin-bottom: 24px;
@@ -256,7 +274,6 @@ ul {
   border: none;
   height: 176px;
   margin: 0 -24px;
-  border-radius: 16px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -265,6 +282,7 @@ ul {
     margin: auto;
     width: 320px;
     height: 500px;
+    border-radius: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -377,6 +395,7 @@ ul {
 }
 
 .form-terms {
+  display: none;
   margin: 0 auto;
   max-width: 220px;
   font-weight: 500;
@@ -387,6 +406,11 @@ ul {
 .form-terms__link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
+}
+@media screen and (min-width: 768px) {
+  .form-terms {
+    display: block;
+  }
 }
 
 .header {
@@ -421,6 +445,16 @@ ul {
       -ms-flex-positive: 1;
           flex-grow: 1;
   gap: 40px;
+}
+.header__logo {
+  width: 72px;
+  height: 38px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 114px;
+    height: 56px;
+  }
 }
 .header__menu {
   display: none;
@@ -462,7 +496,7 @@ ul {
 }
 
 .hero-section {
-  padding: 124px 0;
+  padding: 124px 0 30px;
   /* background: url(../img/coupe-in-bekery.jpg) no-repeat center top / cover fixed; */
   background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(../img/hero-section-background.jpg);
   background-repeat: no-repeat;
@@ -470,7 +504,7 @@ ul {
   background-size: cover;
   /* background-attachment: fixed; */
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     padding: 272px 0;
   }
@@ -523,6 +557,8 @@ ul {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  padding: 16px 24px;
+  z-index: 2;
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
@@ -532,6 +568,41 @@ ul {
   position: absolute;
   top: 16px;
   right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu__logo {
+  margin-bottom: 32px;
+}
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.mobile-menu__link {
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.mobile-menu__link:hover {
+  color: var(--color-brand-normal);
 }
 
 .backdrop {
@@ -646,6 +717,14 @@ ul {
 }
 .section__title--centered {
   text-align: center;
+}
+.section__paragraph {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .section__paragraph {
+    font-size: 18px;
+  }
 }
 
 .traditions-section {
@@ -856,7 +935,7 @@ ul {
   left: 42px;
 }
 .input__control {
-  padding: 16px 42px;
+  padding: 8px 24px;
   width: 100%;
   font-size: 16px;
   line-height: 1.17;
@@ -907,6 +986,11 @@ ul {
 }
 .input__control:focus::placeholder {
   color: var(--color-primary-dark);
+}
+@media screen and (min-width: 768px) {
+  .input__control {
+    padding: 16px 42px;
+  }
 }
 
 .link {
